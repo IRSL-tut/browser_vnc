@@ -27,7 +27,7 @@ ARG TURBOVNC_VERSION=3.1
 RUN apt-get update -q -qq && \
     apt-get install -q -qq -y --no-install-recommends libxt6 libxext6 xauth x11-xkb-utils xkb-data \
     && rm -rf /var/lib/apt/lists/*
-RUN wget -q https://jaist.dl.sourceforge.net/project/turbovnc/${TURBOVNC_VERSION}/turbovnc_${TURBOVNC_VERSION}_amd64.deb && \
+RUN wget -q https://github.com/TurboVNC/turbovnc/releases/download/${TURBOVNC_VERSION}/turbovnc_${TURBOVNC_VERSION}_amd64.deb && \
     dpkg -i turbovnc_${TURBOVNC_VERSION}_amd64.deb  && \
     rm -rf turbovnc_${TURBOVNC_VERSION}_amd64.deb
 

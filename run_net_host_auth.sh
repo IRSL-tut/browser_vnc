@@ -2,8 +2,7 @@
 
 # REPO=irslrepo/
 REPO=repo.irsl.eiiris.tut.ac.jp/
-# UBUNTU_VER=22.04
-UBUNTU_VER=20.04
+UBUNTU_VER=24.04
 
 iname=${DOCKER_IMAGE:-"${REPO}browser_vnc:${UBUNTU_VER}"} ##
 cname=${DOCKER_CONTAINER:-"browser_vnc"} ## name of container (should be same as in exec.sh)
